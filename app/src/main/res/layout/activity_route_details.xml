@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_route_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.routes.RouteDetailsActivity">
+
+    <TextView
+        android:text="Route Name:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/r_name"
+        android:layout_alignParentStart="true"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/r_name"
+        android:id="@+id/textView_routeDetailsName"
+        android:layout_alignParentStart="true"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="Route Date:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_routeDetailsName"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/r_date"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_date"
+        android:layout_alignEnd="@+id/textView_routeDetailsName"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView_routeDetailsDate"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|italic" />
+
+    <TextView
+        android:text="Route Comment:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/textView_routeDetailsDate"
+        android:id="@+id/r_comment"
+        android:textStyle="normal|bold"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r_comment"
+        android:layout_alignStart="@+id/textView_routeDetailsDate"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView_routeDetailsComments"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="normal|italic" />
+
+
+
+</RelativeLayout>
